@@ -16,6 +16,11 @@ function init() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 
+
+// Clear Button
+
+const clearButton = document.getElementById('clear-button');
+
   // Event listeners - Mouse Events 
  
   canvas.addEventListener('mousemove', mouseMove, false);
@@ -31,6 +36,9 @@ function init() {
   canvas.addEventListener('touchend', mouseUp);
   clearButton.addEventListener('click', handleClearButtonClick);
 
+  // Button 
+
+clearButton.addEventListener('click', handleClearButtonClick);
 
   
  
@@ -135,6 +143,18 @@ function textWidth( string, size ) {
   }
  
  };
+
+ // Button Functions 
+
+ function clearCanvas() {
+  canvas.width = canvas.width;
+}
+
+function handleClearButtonClick(event) {
+  event.preventDefault();
+  
+  clearCanvas();
+}
 
 
 

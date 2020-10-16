@@ -70,6 +70,13 @@ span h2 {
   color: #000;
 }
 
+
+#info-mobile{
+  visibility: hidden;
+}
+
+
+
 @media screen and (max-width: 877px) {
   span {
     left: 40%;
@@ -79,10 +86,20 @@ span h2 {
   span {
     left: 37%;
   }
-  .logo {
-    left: 35;
+  .logos {
+/*    left: 35$;*/
+    top:60%;
   }
+
+  #info-mobile{
+  visibility: visible;
 }
+
+#info{
+  visibility: hidden;
+}
+}
+
 @media screen and (max-width: 730px) {
   span {
     left: 35%;
