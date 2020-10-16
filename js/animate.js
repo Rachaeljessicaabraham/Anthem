@@ -34,7 +34,7 @@ const clearButton = document.getElementById('clear-button');
   canvas.addEventListener('touchstart', mouseDown);
   canvas.addEventListener('touchmove', mouseMove);
   canvas.addEventListener('touchend', mouseUp);
-  clearButton.addEventListener('click', handleClearButtonClick);
+  
 
   // Button 
 
@@ -123,6 +123,8 @@ function mouseDown( event ){
   position.y = event.pageY || position.touches[0].pageY;
  
   document.getElementById('info').style.display = 'none';
+  document.getElementById('info-mobile').style.display = 'none';
+
 }
 
 function mouseUp( event ){

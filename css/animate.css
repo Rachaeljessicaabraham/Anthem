@@ -71,7 +71,10 @@ span h2 {
 }
 
 
-#info-mobile{
+.info-mobile{
+  visibility: hidden;
+}
+#clr-btn{
   visibility: hidden;
 }
 
@@ -88,12 +91,26 @@ span h2 {
   }
   .logos {
 /*    left: 35$;*/
-    top:60%;
+    top:32%;
   }
 
-  #info-mobile{
+  .info-mobile{
   visibility: visible;
+  opacity: 0.4;
 }
+#clr-btn{
+  visibility: visible;
+  position: absolute;
+  top:30%;
+  left:50%;
+  margin-left: -34.2px;
+}
+#clear-button{
+  font-size: 12px;
+  padding: 5px 15px;
+  margin: 0;
+}
+
 
 #info{
   visibility: hidden;
@@ -113,17 +130,45 @@ span h2 {
     width: 200px;
   }
   .logos {
-    top: 30%;
+    top: 35%;
     margin-left: -100px;
   }
   .btn {
     margin-left: unset;
   }
+  #clr-btn{
+  visibility: visible;
+  position: absolute;
+  top:30%;
+  left:50%;
+  margin-left: -28px;
+  
+}
+
 }
 @media screen and (max-width: 600px) {
   span {
     left: 40%;
   }
+  #clr-btn{
+ 
+  top:35%;
+  
+  
+}
+}
+
+@media screen and (max-width: 477px) {
+  .logos {
+    top: 40%;
+    
+  }
+  #clr-btn{
+ 
+  top:39%;
+  
+  
+}
 }
 @media screen and (max-width: 460px) {
   span {
