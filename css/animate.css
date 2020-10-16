@@ -54,10 +54,10 @@ canvas {
 span {
   text-align: center;
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
   position: fixed;
-  top: 10%;
+  top: 8%;
   left: 42%;
   color: #3c3431;
   margin-top: -40px;
